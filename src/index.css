@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.summary {
+  text-transform: capitalize;
+}
+
+
+.weather-card {
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+display: flex;
+flex-direction: column;
+background: black;
+border-radius: 25px;
+width: fit-content;
+min-width: 25%;
+margin: 20px auto;
+padding: 10px;
+}
+
+.temperature {
+  font-size: 48px;
+  margin: 1rem;
+}
+
+.search {
+margin: 0 auto;
+margin-bottom: 0px;
+width: 25%;
+height: 30px;
+border-radius: 25px;
+}
