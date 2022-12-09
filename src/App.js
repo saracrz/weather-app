@@ -25,8 +25,6 @@ const App =() => {
     }
   };
 
-  console.log(data);
-
   const weatherProps = {
     city: data?.name,
     humidity: data?.main?.humidity,
