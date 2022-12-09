@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -14,30 +14,71 @@ code {
 
 .summary {
   text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 3rem;;
 }
 
 
 .weather-card {
+background: rgba(255, 255, 255, 0.897);
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: 25px;
+color:rgb(133, 88, 238);
 display: flex;
 flex-direction: column;
-background: black;
-border-radius: 25px;
-width: fit-content;
 min-width: 25%;
 margin: 20px auto;
+opacity: 75%;
 padding: 10px;
+width: fit-content;
+}
+
+h3 {
+  margin-bottom: 1rem;
 }
 
 .temperature {
-  font-size: 48px;
+  font-size: 68px;
   margin: 1rem;
+  font-weight: bold;
 }
 
 .search {
+border-radius: 25px;
+border: 1px solid white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+height: 30px;
 margin: 0 auto;
 margin-bottom: 0px;
 width: 25%;
-height: 30px;
-border-radius: 25px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+input::placeholder {
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.footer-text {
+  font-weight: 600;
+}
+
+.footer-container {
+  font-size: 14px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input[type=text] {
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.image {
+  height: 15vmin;
+  margin-bottom: 2.5rem;
 }
