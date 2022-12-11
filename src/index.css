@@ -23,14 +23,31 @@ code {
 background: rgba(255, 255, 255, 0.897);
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 border-radius: 25px;
-color:rgb(133, 88, 238);
+color:rgb(68, 12, 199);
 display: flex;
 flex-direction: column;
-min-width: 25%;
 margin: 20px auto;
 opacity: 75%;
 padding: 10px;
-width: fit-content;
+width: 25%;
+}
+
+@media (max-width: 820px) {
+  .weather-card {
+    width: 50%;
+  }
+}
+
+@media (max-width: 820px) {
+  input.search {
+    width: 50%;
+  }
+}
+
+@media (max-width: 820px) {
+  img.image {
+    height: 20vmin;
+  }
 }
 
 h3 {
@@ -47,7 +64,7 @@ h3 {
 border-radius: 25px;
 border: 1px solid white;
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-height: 30px;
+height: 40px;
 margin: 0 auto;
 margin-bottom: 0px;
 width: 25%;
@@ -58,8 +75,8 @@ input:focus-visible {
 }
 
 input::placeholder {
-  padding-left: 15px;
-  font-size: 16px;
+  padding-left: 5px;
+  font-size: 18px;
 }
 
 .footer-text {
@@ -74,11 +91,11 @@ input::placeholder {
 }
 
 input[type=text] {
-  font-size: 16px;
+  font-size: 18px;
   padding-left: 15px;
 }
 
 .image {
-  height: 15vmin;
+  height: 10vmin;
   margin-bottom: 2.5rem;
 }
