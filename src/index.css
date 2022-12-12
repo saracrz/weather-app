@@ -79,6 +79,11 @@ input::placeholder {
   font-size: 18px;
 }
 
+input[type=text] {
+  font-size: 18px;
+  padding-left: 15px;
+}
+
 .footer-text {
   font-weight: 600;
 }
@@ -88,11 +93,6 @@ input::placeholder {
   border-radius: 50px;
   display: flex;
   justify-content: space-evenly;
-}
-
-input[type=text] {
-  font-size: 18px;
-  padding-left: 15px;
 }
 
 .image {
