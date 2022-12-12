@@ -8,9 +8,8 @@ It uses the open weather map.
 ## Clone the repository in your local: 
 `git clone https://github.com/saracrz/weather-app.git`
 
-## To run rhe project:
+## To run the project:
 
-You need to have installed node, axios and npm packages.
 In the project directory, you can run:
 
 ### `npm start`
