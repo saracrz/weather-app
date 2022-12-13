@@ -1,16 +1,16 @@
 # Weather APP
 
-This is a weeather app where you can have data from many cities in the world. 
-It uses the open weather map.
-[More info about](https://openweathermap.org/)
+This is a weeather app where you can have data from many cities in the world.\
+Is deloveped with ReactJS, NodeJS and Axios.\
+It's using the open weather map API.\
+[More info about the API](https://openweathermap.org/)
 
 
 ## Clone the repository in your local: 
 `git clone https://github.com/saracrz/weather-app.git`
 
-## To run rhe project:
+## To run the project:
 
-You need to have installed node, axios and npm packages.
 In the project directory, you can run:
 
 ### `npm start`
