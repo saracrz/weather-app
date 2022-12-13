@@ -1,29 +1,29 @@
 import './App.css';
 import { WeatherCard, Search } from './components'
-import axios from 'axios';
-import { useState } from 'react'
+import {useFetch} from './hooks/useFetch'
+import {useState } from 'react'
 import weather_app from './weather_app.svg'
+
+
 
 const api_key = process.env.REACT_APP_API_KEY;
 
-const App =() => {
-  const [data, setData] = useState(null);
-  const [location, setLocation] = useState('');
+const App = () => {
+const [location, setLocation] = useState('');
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&lat={lat}&lon={lon}&units=metric&appid=${api_key}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&lat={lat}&lon={lon}&units=metric&appid=${api_key}`;
+const { data, getData } = useFetch(url)
 
-  const getData = (e) => {
-    if(e.key === 'Enter') {
-        axios.get(url)
-        .then((response) => {
-            setData(response?.data);
-          }).catch(error => {
-            return error;
-          })
-        setLocation('')
-    }
-  };
 
+
+const handleKeyPress = (e) =>{
+  if(e.key === 'Enter') {
+    getData();
+    setLocation('')
+  }
+}
+
+      
   const weatherProps = {
     city: data?.name,
     humidity: data?.main?.humidity,
@@ -39,7 +39,7 @@ const App =() => {
     <div className="App">
       <header className="App-header">
         <img src={weather_app} className='image'/>
-        <Search value={location} onChange={(e) => setLocation(e.target.value)} onKeyPress={getData} type='text'/>
+        <Search value={location} onChange={(e) => setLocation(e.target.value)} onKeyPress={handleKeyPress} type='text'/>
         {data && 
         <WeatherCard {...weatherProps}/>
         }
