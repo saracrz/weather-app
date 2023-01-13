@@ -1,7 +1,7 @@
 # Weather APP
 
-This is a weeather app where you can have data from many cities in the world.\
-Is deloveped with ReactJS, NodeJS and Axios.\
+This is a weather app where you can get the weather data from many cities in the world.\
+Is developed with ReactJS and NodeJS.\
 It's using the open weather map API.\
 [More info about the API](https://openweathermap.org/)
 
